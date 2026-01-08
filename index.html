@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Ronda</title>
+  <style>
+    :root{
+      --border:#2aa7c9;
+      --header-bg:#efe4a6;
+      --paper:#ffffff;
+      --footer:#d9e7a6;
+      --text:#111;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:#f3f3f3;
+    }
+    .page{
+      max-width:1100px;
+      margin:24px auto;
+      background:var(--paper);
+      border:4px solid #111;
+    }
+    header{
+      text-align:center;
+      padding:18px 16px 8px;
+      line-height:1.15;
+    }
+    header h1{
+      margin:0;
+      font-size:34px;
+      letter-spacing:1px;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+    header h2{
+      margin:6px 0 0;
+      font-size:20px;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+
+    .content{
+      padding:14px 18px 0;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:18px;
+      align-items:start;
+    }
+
+    .card{
+      border:3px solid var(--border);
+      border-radius:4px;
+      overflow:hidden;
+      background:#fff;
+      min-height:220px;
+    }
+    .card .card-title{
+      background:var(--header-bg);
+      text-align:center;
+      font-weight:900;
+      text-transform:uppercase;
+      padding:10px 8px;
+      font-size:22px;
+      border-bottom:3px solid var(--border);
+    }
+    .card .card-body{
+      padding:10px 14px 14px;
+      font-size:18px;
+    }
+    ol{
+      margin:0;
+      padding-left:22px;
+    }
+    li{ margin:4px 0; }
+
+    /* baris bawah: 3 kotak + kotak catatan */
+    .grid.bottom{
+      margin-top:18px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .note{
+      border:3px solid var(--border);
+      border-radius:4px;
+      min-height:220px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px;
+      text-align:center;
+      font-size:20px;
+      line-height:1.5;
+      background:#fff;
+    }
+    .note b{ font-weight:900; }
+
+    footer{
+      margin-top:18px;
+      background:var(--footer);
+      padding:14px 16px;
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      align-items:center;
+      border-top:3px solid #1112;
+      flex-wrap:wrap;
+    }
+    footer .left{
+      font-size:18px;
+      font-weight:700;
+      text-align:center;
+      flex:1 1 520px;
+    }
+    footer .right{
+      font-size:22px;
+      font-weight:900;
+      flex:0 0 auto;
+    }
+
+    /* Responsif */
+    @media (max-width: 980px){
+      .grid, .grid.bottom{ grid-template-columns: repeat(2, 1fr); }
+      header h1{ font-size:30px; }
+    }
+    @media (max-width: 560px){
+      .grid, .grid.bottom{ grid-template-columns: 1fr; }
+      header h1{ font-size:26px; }
+      header h2{ font-size:16px; }
+      .card .card-body{ font-size:17px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Daftar Ronda</h1>
+      <h2>Plembangan RT 06-07 RW 26 Jogotirto Berbah Sleman di Yogyakarta</h2>
+    </header>
+
+    <main class="content">
+      <!-- BARIS ATAS (4 kolom) -->
+      <section class="grid">
+        <article class="card">
+          <div class="card-title">Malam Ahad</div>
+          <div class="card-body">
+            <ol>
+              <li>Jumadiyanto</li>
+              <li>Tukijan</li>
+              <li>Sarjono</li>
+              <li>Rustam</li>
+              <li>Fitri Puji Nugroho</li>
+              <li>Panggih</li>
+              <li>Bagas F</li>
+              <li>Mutohar</li>
+              <li>Suhardi</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Malam Senin</div>
+          <div class="card-body">
+            <ol>
+              <li>Jamhari</li>
+              <li>Sujadi</li>
+              <li>Agus Sukino</li>
+              <li>Agus Joko Widodo</li>
+              <li>Hawin Mustofa</li>
+              <li>Bambang Supriyanto</li>
+              <li>Danang Wahyudi</li>
+              <li>Kelik Indro S</li>
+              <li>Romad Samhudi</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Malam Selasa</div>
+          <div class="card-body">
+            <ol>
+              <li>Basuki</li>
+              <li>Sudarmo</li>
+              <li>Siyamto</li>
+              <li>Joko Praptono</li>
+              <li>Amin Widodo</li>
+              <li>Budi Susanto</li>
+              <li>Aris</li>
+              <li>Mustafid</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Malam Rabu</div>
+          <div class="card-body">
+            <ol>
+              <li>Subagiyo</li>
+              <li>Purwanto</li>
+              <li>Dandut Maryadi</li>
+              <li>Budi Hastoro</li>
+              <li>Tukul Widodo</li>
+              <li>Bejo</li>
+              <li>Ari Indriyadi</li>
+              <li>Aris Nugroho Aji</li>
+            </ol>
+          </div>
+        </article>
+      </section>
+
+      <!-- BARIS BAWAH (3 kotak + catatan) -->
+      <section class="grid bottom">
+        <article class="card">
+          <div class="card-title">Malam Kamis</div>
+          <div class="card-body">
+            <ol>
+              <li>Totok S</li>
+              <li>Drs. Warsito</li>
+              <li>Nuryadi</li>
+              <li>Eko Prasetyo</li>
+              <li>Fajar Widodo</li>
+              <li>Marwoto</li>
+              <li>Agus Haryanto</li>
+              <li>Sugiyono</li>
+              <li>Wagiyo</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Malam Jum’at</div>
+          <div class="card-body">
+            <ol>
+              <li>M. Syamsuri</li>
+              <li>Sugiyadi Gandung</li>
+              <li>Pariman</li>
+              <li>Maryanto</li>
+              <li>Syamsudin</li>
+              <li>Margono</li>
+              <li>Subarjo</li>
+              <li>Sigit</li>
+              <li>Bardi</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">Malam Sabtu</div>
+          <div class="card-body">
+            <ol>
+              <li>H. Sulsityo</li>
+              <li>Drs. H. Hendry Haryanto</li>
+              <li>Jubaidi</li>
+              <li>Ngatijo</li>
+              <li>Dwi</li>
+              <li>Purwo</li>
+              <li>Tri Santoso</li>
+              <li>Budi Slamet</li>
+              <li>Masruri B.</li>
+            </ol>
+          </div>
+        </article>
+
+        <aside class="note">
+          <div>
+            “Sebelum meninggalkan Rumah jangan lupa:<br />
+            <b>Berdo’alah!</b><br />
+            Pintu &amp; Jendela harap dikunci”
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="left">
+        Setiap anggota Wajib menghadiri pertemuan Minggu Kliwon &amp; mendukung kegiatan RW 26<br />
+        Jika berhalangan harap memberi kabar!
+      </div>
+      <div class="right">Pengurus RW 26</div>
+    </footer>
+  </div>
+</body>
+</html>
